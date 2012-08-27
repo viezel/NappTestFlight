@@ -2,7 +2,7 @@
 
 ### NappTestFlight Module for Appcelerator Titanium 
 
-This is a Test Flight module currently based on TestFlight SDK 1.0
+This is a Test Flight module currently based on TestFlight SDK 1.0. 
 
 
 ### API
@@ -13,6 +13,7 @@ To access this module from JavaScript, you would do the following:
         <module version="1.0" platform="iphone">dk.napp.testflight</module> 
     </modules>
 
+The provided API is simple:
 
 	var NappTestFlight = require('dk.napp.testflight');
 	
