@@ -1,0 +1,14 @@
+tmp
+bin
+build
+*.zip
+*.a
+*.class
+*.dll
+*.dylib
+*.exe
+*.o
+*.obj
+*.pyc
+*.pyo
+*.so

@@ -1,0 +1,18 @@
+#
+# this is your module manifest and used by Titanium
+# during compilation, packaging, distribution, etc.
+#
+version: 1.0
+apiversion: 2
+description: My module
+author: Mads Møller
+license: Free
+copyright: Napp CMS
+
+
+# these should not be edited
+name: napptestflight
+moduleid: dk.napp.testflight
+guid: 6b6d1ee9-4e96-45fc-9ae9-261f00888b6d
+platform: iphone
+minsdk: 2.1.0.GA
