@@ -91,8 +91,8 @@
     ENSURE_UI_THREAD_1_ARG(token);
     ENSURE_SINGLE_ARG(token, NSString);
     NSLog(@"[INFO] TestFlight takeOff (%@)", token);
+    [TestFlight setDeviceIdentifier:[TiUtils createUUID]]; //must be before takeOff
     [TestFlight takeOff:token];
-    [TestFlight setDeviceIdentifier:[TiUtils createUUID]];
 }
 
 -(void)testException:(id)args {

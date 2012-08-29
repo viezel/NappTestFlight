@@ -1,7 +1,6 @@
 tmp
 bin
 build
-*.a
 *.class
 *.dll
 *.dylib
