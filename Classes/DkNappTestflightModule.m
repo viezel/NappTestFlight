@@ -92,7 +92,7 @@
     ENSURE_SINGLE_ARG(token, NSString);
     NSLog(@"[INFO] TestFlight takeOff (%@)", token);
     [TestFlight setDeviceIdentifier:[[UIDevice currentDevice] uniqueIdentifier]]; //must be before takeOff
-    //[TestFlight setDeviceIdentifier:[TiUtils createUUID]]; //must be before takeOff
+    //[TestFlight setDeviceIdentifier:[TiUtils createUUID]]; //cannot be appcelerator uuid
     [TestFlight takeOff:token];
 }
 
@@ -117,15 +117,14 @@
     ENSURE_SINGLE_ARG_OR_NIL(args, NSDictionary);
     NSString * key = [TiUtils stringValue:@"key" properties:args def:@""];
     NSString * value = [TiUtils stringValue:@"value" properties:args def:@""];
-    
-    //NSString *key = [TiUtils stringValue:[args objectAtIndex:0]];
-    //NSString *value = [TiUtils stringValue:[args objectAtIndex:1]];
     [TestFlight addCustomEnvironmentInformation: value forKey:key];
 }
+
+//#define NSLog(__FORMAT__, ...) TFLog((@"%s [Line %d] " __FORMAT__), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)
 -(void)log:(id)msg
 {
     ENSURE_SINGLE_ARG(msg, NSString);
-    NSLog(@"[INFO] TestFlight (%@)", msg);
+    TFLog(@"[INFO] TestFlight (%@)", msg);
 }
 
 @end
