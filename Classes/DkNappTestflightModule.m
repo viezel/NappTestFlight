@@ -91,7 +91,8 @@
     ENSURE_UI_THREAD_1_ARG(token);
     ENSURE_SINGLE_ARG(token, NSString);
     NSLog(@"[INFO] TestFlight takeOff (%@)", token);
-    [TestFlight setDeviceIdentifier:[TiUtils createUUID]]; //must be before takeOff
+    [TestFlight setDeviceIdentifier:[[UIDevice currentDevice] uniqueIdentifier]]; //must be before takeOff
+    //[TestFlight setDeviceIdentifier:[TiUtils createUUID]]; //must be before takeOff
     [TestFlight takeOff:token];
 }
 
@@ -100,7 +101,7 @@
 }
 
 -(void)passCheckpoint:(id)checkPoint {
-    ENSURE_SINGLE_ARG(checkPoint, NSString)
+    ENSURE_SINGLE_ARG(checkPoint, NSString);
     NSLog(@"[INFO] TestFlight Checkpoint: (%@)", checkPoint);
     [TestFlight passCheckpoint:checkPoint];
 }
@@ -120,6 +121,11 @@
     //NSString *key = [TiUtils stringValue:[args objectAtIndex:0]];
     //NSString *value = [TiUtils stringValue:[args objectAtIndex:1]];
     [TestFlight addCustomEnvironmentInformation: value forKey:key];
+}
+-(void)log:(id)msg
+{
+    ENSURE_SINGLE_ARG(msg, NSString);
+    NSLog(@"[INFO] TestFlight (%@)", msg);
 }
 
 @end
