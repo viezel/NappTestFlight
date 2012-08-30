@@ -20,6 +20,10 @@ The provided API is simple:
 	NappTestFlight.takeOff("Your-Team-Token-Here"); //get token from Test Flight website
 	NappTestFlight.passCheckpoint("create a checkpoint"); //make checkpoints in your code
 	NappTestFlight.launchFeedback(); //get feedback from users
+	
+	NappTestFlight.log(); //log - will show up in testflight sessions
+	
+
 
 
 ### Author
