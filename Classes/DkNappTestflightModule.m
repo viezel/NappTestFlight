@@ -91,8 +91,12 @@
     ENSURE_UI_THREAD_1_ARG(token);
     ENSURE_SINGLE_ARG(token, NSString);
     NSLog(@"[INFO] TestFlight takeOff (%@)", token);
+
+//we do not want to use identifier in production
+#ifndef RELEASE
     [TestFlight setDeviceIdentifier:[[UIDevice currentDevice] uniqueIdentifier]]; //must be before takeOff
-    //[TestFlight setDeviceIdentifier:[TiUtils createUUID]]; //cannot be appcelerator uuid
+#endif    
+    
     [TestFlight takeOff:token];
 }
 

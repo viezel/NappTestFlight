@@ -49,8 +49,6 @@
 		24DE9E0F11C5FE74003F90F6 /* DkNappTestflightModuleAssets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DkNappTestflightModuleAssets.h; path = Classes/DkNappTestflightModuleAssets.h; sourceTree = "<group>"; };
 		24DE9E1011C5FE74003F90F6 /* DkNappTestflightModuleAssets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DkNappTestflightModuleAssets.m; path = Classes/DkNappTestflightModuleAssets.m; sourceTree = "<group>"; };
 		6906769615EC17D400C8BFD3 /* libTestFlight.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTestFlight.a; sourceTree = "<group>"; };
-		6906769715EC17D400C8BFD3 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
-		6906769815EC17D400C8BFD3 /* release_notes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = release_notes.txt; sourceTree = "<group>"; };
 		6906769915EC17D400C8BFD3 /* TestFlight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestFlight.h; sourceTree = "<group>"; };
 		AA747D9E0F9514B9006C5449 /* DkNappTestflight_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DkNappTestflight_Prefix.pch; sourceTree = SOURCE_ROOT; };
 		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -122,8 +120,6 @@
 			isa = PBXGroup;
 			children = (
 				6906769615EC17D400C8BFD3 /* libTestFlight.a */,
-				6906769715EC17D400C8BFD3 /* README.txt */,
-				6906769815EC17D400C8BFD3 /* release_notes.txt */,
 				6906769915EC17D400C8BFD3 /* TestFlight.h */,
 			);
 			path = TestFlightSDK;

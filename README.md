@@ -2,7 +2,7 @@
 
 ### NappTestFlight Module for Appcelerator Titanium 
 
-This is a Test Flight module currently based on TestFlight SDK 1.0. 
+This is a Test Flight module currently based on TestFlight SDK 1.1. 
 
 
 ### API
@@ -10,7 +10,7 @@ This is a Test Flight module currently based on TestFlight SDK 1.0.
 To access this module from JavaScript, you would do the following:
 
 	<modules>
-        <module version="1.0" platform="iphone">dk.napp.testflight</module> 
+        <module version="1.1" platform="iphone">dk.napp.testflight</module> 
     </modules>
 
 The provided API is simple:
@@ -24,6 +24,16 @@ The provided API is simple:
 	NappTestFlight.log(); //log - will show up in testflight sessions
 	
 
+## Changelog
+
+**v1.2**
+TestFlight SDK v1.1 - Support for iOS6 and iPhone5.
+
+**v1.1**
+TFLog inplemented.
+
+**v1.0**
+Initial implementation of of TestFlight. 
 
 
 ### Author
