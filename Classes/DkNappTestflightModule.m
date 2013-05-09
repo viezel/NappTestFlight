@@ -94,7 +94,7 @@
 
 //we do not want to use identifier in production
 #ifndef RELEASE
-    [TestFlight setDeviceIdentifier:[[UIDevice currentDevice] uniqueIdentifier]]; //must be before takeOff
+    //[TestFlight setDeviceIdentifier:[[UIDevice currentDevice] uniqueIdentifier]]; //must be before takeOff
 #endif    
     
     [TestFlight takeOff:token];
