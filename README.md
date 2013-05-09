@@ -1,16 +1,20 @@
 ![TestFlight](https://s3.amazonaws.com/github-ds/TestFlight.png)
 
-### NappTestFlight Module for Appcelerator Titanium 
+## NappTestFlight Module for Appcelerator Titanium 
 
-This is a Test Flight module currently based on TestFlight SDK 1.1. 
+This is a Test Flight module currently based on TestFlight SDK 1.2.4. 
 
+
+### Download
+
+**Find the newest version in the dist folder** 
 
 ### API
 
 To access this module from JavaScript, you would do the following:
 
 	<modules>
-        <module version="1.1" platform="iphone">dk.napp.testflight</module> 
+        <module platform="iphone">dk.napp.testflight</module> 
     </modules>
 
 The provided API is simple:
@@ -26,29 +30,29 @@ The provided API is simple:
 
 ## Changelog
 
-**v1.2**
+**v1.3**  
+TestFlight SDK v1.2.4
+
+**v1.2**  
 TestFlight SDK v1.1 - Support for iOS6 and iPhone5.
 
-**v1.1**
+**v1.1**  
 TFLog inplemented.
 
-**v1.0**
+**v1.0**  
 Initial implementation of of TestFlight. 
 
 
 ### Author
 
-**Mads Møller**
-
-web: http://www.napp.dk
-
-email: mm@napp.dk
-
-twitter: nappdev
+**Mads Møller**  
+web: http://www.napp.dk  
+email: mm@napp.dk  
+twitter: nappdev  
 
 ### License
 
-    Copyright (c) 2010-2011 Mads Møller
+    Copyright (c) 2010-2013 Mads Møller
 
     Permission is hereby granted, free of charge, to any person obtaining a copy
     of this software and associated documentation files (the "Software"), to deal
