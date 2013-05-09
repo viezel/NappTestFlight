@@ -2,8 +2,10 @@
 var NappTestFlight = require('dk.napp.testflight');
 
 // Take off!
-// key to see the results of these tests
-NappTestFlight.takeOff("Your-Team-Token-Here");
+// As of version SDK 1.2 takeOff must be called with the Application Token, 
+// look here: https://testflightapp.com/dashboard/applications/, 
+// choose your application, select SDK, get the Token for this Application.
+NappTestFlight.takeOff("Your-App-Token-Here");
 
 // Create some simple controls to test things out.
 var window = Ti.UI.createWindow({backgroundColor:'white'});
@@ -16,7 +18,7 @@ var buttonFactory = function(label) {
     height:40,
     width:200,
     title:label,
-    color:'#fad'
+    color:'#000'
   });
 };
 
