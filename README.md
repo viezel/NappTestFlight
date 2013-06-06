@@ -30,6 +30,9 @@ The provided API is simple:
 
 ## Changelog
 
+**v1.3.1**  
+TestFlight SDK v1.2.5
+
 **v1.3**  
 TestFlight SDK v1.2.4
 
