@@ -1,0 +1,18 @@
+#
+# this is your module manifest and used by Titanium
+# during compilation, packaging, distribution, etc.
+#
+version: 0.5
+apiversion: 2
+description: Testflight for Android
+author: Mads Moller
+license: MIT
+copyright: Napp ApS
+
+
+# these should not be edited
+name: napptestflightandroid
+moduleid: dk.napp.testflight
+guid: 63e90d02-2fb4-4843-922c-7de72488dc28
+platform: android
+minsdk: 2.1.4.GA
