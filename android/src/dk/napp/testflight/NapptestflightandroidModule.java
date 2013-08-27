@@ -48,6 +48,20 @@ public class NapptestflightandroidModule extends KrollModule
 	}
 	
 	@Kroll.method
+	public void startSession()
+	{
+		Log.d(LCAT, "[INFO] TestFlight start session");
+		TestFlight.startSession();
+	}
+	
+	@Kroll.method
+	public void endSession()
+	{
+		Log.d(LCAT, "[INFO] TestFlight end session");
+		TestFlight.endSession();
+	}
+	
+	@Kroll.method
 	public void passCheckpoint(String checkPoint)
 	{
 		Log.d(LCAT, "[INFO] TestFlight Checkpoint: " + checkPoint);
