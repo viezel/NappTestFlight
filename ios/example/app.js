@@ -24,15 +24,12 @@ var buttonFactory = function(label) {
 
 var button1 = buttonFactory("Pass checkpoint");
 var button2 = buttonFactory("Test Exception");
-var button3 = buttonFactory("Launch Feedback");
 
 button1.addEventListener('click', function() { NappTestFlight.passCheckpoint("Test Checkpoint"); });
 button2.addEventListener('click', function() { NappTestFlight.testException(); });
-button3.addEventListener('click', function() { NappTestFlight.launchFeedback(); });
 
 view.add(button1);
 view.add(button2);
-view.add(button3);
 
 window.add(view);
 window.open();
