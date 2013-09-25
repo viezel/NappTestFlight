@@ -2,7 +2,7 @@
 
 ## NappTestFlight Module for Appcelerator Titanium 
 
-This is a Test Flight module currently based on TestFlight SDK 1.2.4. 
+This is a Test Flight module currently based on TestFlight SDK 2.0. 
 
 
 ### Download
@@ -23,27 +23,29 @@ The provided API is simple:
 	
 	NappTestFlight.takeOff("Your-Team-Token-Here"); //get token from Test Flight website
 	NappTestFlight.passCheckpoint("create a checkpoint"); //make checkpoints in your code
-	NappTestFlight.launchFeedback(); //get feedback from users
-	
 	NappTestFlight.log(); //log - will show up in testflight sessions
 	
 
 ## Changelog
 
-**v1.3.1**  
-TestFlight SDK v1.2.5
+* **v2.0**  
+  * TestFlight SDK v2.0  
+  * SDK 2 - Removes the launch feedback view
 
-**v1.3**  
-TestFlight SDK v1.2.4
+* **v1.3.1**  
+  * TestFlight SDK v1.2.5
 
-**v1.2**  
-TestFlight SDK v1.1 - Support for iOS6 and iPhone5.
+* **v1.3**  
+  * TestFlight SDK v1.2.4
 
-**v1.1**  
-TFLog inplemented.
+* **v1.2**  
+  * TestFlight SDK v1.1 - Support for iOS6 and iPhone5.
 
-**v1.0**  
-Initial implementation of of TestFlight. 
+* **v1.1**  
+  * TFLog inplemented.
+
+* **v1.0**  
+  * Initial implementation of of TestFlight. 
 
 
 ### Author

@@ -90,12 +90,7 @@
 -(void)takeOff:(id)token {
     ENSURE_UI_THREAD_1_ARG(token);
     ENSURE_SINGLE_ARG(token, NSString);
-    NSLog(@"[INFO] TestFlight takeOff (%@)", token);
-
-//we do not want to use identifier in production
-#ifndef RELEASE
-    //[TestFlight setDeviceIdentifier:[[UIDevice currentDevice] uniqueIdentifier]]; //must be before takeOff
-#endif    
+    NSLog(@"[INFO] TestFlight takeOff (%@)", token);   
     
     [TestFlight takeOff:token];
 }
@@ -108,12 +103,6 @@
     ENSURE_SINGLE_ARG(checkPoint, NSString);
     NSLog(@"[INFO] TestFlight Checkpoint: (%@)", checkPoint);
     [TestFlight passCheckpoint:checkPoint];
-}
-
--(void)launchFeedback:(id)args {
-    NSLog(@"[INFO] TestFlight opening feedback view");
-    ENSURE_UI_THREAD_0_ARGS
-    [TestFlight openFeedbackView];
 }
 
 -(void)customInfo:(id)args
