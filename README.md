@@ -2,7 +2,7 @@
 
 ## NappTestFlight Module for Appcelerator Titanium 
 
-This is a Test Flight module currently based on TestFlight SDK. This module now supports iOS and Android. (The android version is still in beta.)
+This is a Test Flight module currently based on TestFlight SDK. This module supports iOS and Android. (The android version is still in beta.)
 
 
 ### Download
@@ -10,14 +10,20 @@ This is a Test Flight module currently based on TestFlight SDK. This module now 
 **Find the newest version in the dist folder** 
 
 
-### Author
+## Notice
+
+Testflight does not know that you are using Appcelerator Titanium. So it will come up with a message saying that it cannot find your token. Thats okay. It will still work.
+
+![Warning](https://pbs.twimg.com/media/BVEs_lFCQAAdywd.png)
+
+## Author
 
 **Mads Møller**  
 web: http://www.napp.dk  
 email: mm@napp.dk  
 twitter: nappdev  
 
-### License
+## License
 
     Copyright (c) 2010-2013 Mads Møller
 
