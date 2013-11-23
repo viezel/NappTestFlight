@@ -16,6 +16,22 @@ Testflight does not know that you are using Appcelerator Titanium. So it will co
 
 ![Warning](https://pbs.twimg.com/media/BVEs_lFCQAAdywd.png)
 
+To prevent getting this warning every time, set the tokens in your `tiapp.xml` like this:
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<ti:app xmlns:ti="http://ti.appcelerator.org">
+    <property name="testflight.ios" type="string">9cad1045-56be-4176-ad4a-029c59d5f488</property>
+    <property name="testflight.android" type="string">870aafec-bb4c-4777-91da-014c2d9ffd20</property>
+</ti:app>
+```
+
+Then in your `app.js` do:
+
+```javascript
+require('dk.napp.testflight').takeOff(Ti.App.Properties.getString(Ti.Platform.name === 'iPhone OS' ? 'testflight.ios' : 'testflight.android'));
+```
+
 ## Author
 
 **Mads Møller**  
