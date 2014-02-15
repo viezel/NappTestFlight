@@ -27,6 +27,8 @@ The provided API is simple:
 	
 
 ## Changelog
+* **v2.0**
+  * TestFlight SDK v2.2.1 (required for App Store Acceptance, removed references to ASIdentifierManager) 
 
 * **v2.0**  
   * TestFlight SDK v2.0  

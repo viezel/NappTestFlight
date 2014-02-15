@@ -2,7 +2,7 @@
 # this is your module manifest and used by Titanium
 # during compilation, packaging, distribution, etc.
 #
-version: 2.0
+version: 2.1
 apiversion: 2
 description: Napp TestFlight
 author: Mads Møller
@@ -15,4 +15,4 @@ name: napptestflight
 moduleid: dk.napp.testflight
 guid: 6b6d1ee9-4e96-45fc-9ae9-261f00888b6d
 platform: iphone
-minsdk: 2.1.0.GA
+minsdk: 3.2.0.GA
